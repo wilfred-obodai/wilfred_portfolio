@@ -5,361 +5,415 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wilfred Torgbor Obodai — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" href="assets/wilcodefavicon.png" />
 </head>
 <body>
 
-
   <!-- NAV -->
-  <nav>
-    <div class="logo">W<span>.</span>T<span>.</span>O Portfolio</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#awards">Awards</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="#contact" class="nav-cta">Hire Me</a>
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="logo">WO<span class="accent">.</span></div>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="nav-cta desktop-cta">Hire Me</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <span id="menuIcon">&#9776;</span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#awards">Certifications</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-cta mobile-cta">Hire Me</a>
+    </div>
   </nav>
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-bg-num">WTO</div>
-
-    <div class="hero-left">
-      <p class="hero-kicker">Available for projects — 2025</p>
-      <h1 class="hero-h1">
-        Wilfred<br>
-        <span class="outline">Torgbor</span><br>
-        <em>Obodai</em>
-      </h1>
-      <p class="hero-desc">
-        I build <strong>complete digital products</strong>  from the first line
-        of code to the final pixel. Full Stack Developer, Virtual Assistant
-        &amp; Graphic Designer.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn-y">View My Work</a>
-        <a href="#contact" class="btn-o">Get In Touch</a>
-      </div>
+    <div class="hero-bg">
+      <div class="hero-grid-overlay"></div>
     </div>
-
-    <div class="hero-card">
-      <!-- PHOTO GOES HERE LATER -->
-      <img
-        src="assets/profile.jpg"
-        alt="Wilfred Torgbor Obodai"
-        class="hero-photo"
-      />
-      <div class="hc-label">// Disciplines</div>
-      <div class="hc-role active">
-        <span class="hc-role-name">Full Stack Dev</span>
-        <span class="hc-role-tag">Code</span>
+    <div class="hero-inner">
+      <div class="hero-left r">
+        <div class="hero-badge">Available for Freelance Work</div>
+        <h1 class="hero-h1">Hi, I'm <span class="accent">Wilfred Obodai</span></h1>
+        <p class="hero-sub">Full-Stack Developer &middot; Virtual Assistant &middot; Graphic Designer</p>
+        <p class="hero-desc">
+          Building digital solutions that work for real people. Passionate about
+          creating technology that serves Ghanaian users and beyond.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View My Work <span>&rarr;</span></a>
+          <a href="assets/Wilfred_Torgbor_Obodai_Resume.pdf" download class="btn-outline"><span>&darr;</span> Download Resume</a>
+        </div>
       </div>
-      <div class="hc-role active">
-        <span class="hc-role-name">Virtual Assistant</span>
-        <span class="hc-role-tag">Support</span>
-      </div>
-      <div class="hc-role active">
-        <span class="hc-role-name">Graphic Design</span>
-        <span class="hc-role-tag">Visual</span>
-      </div>
-      <div class="hc-stats">
-        <div class="hcs"><div class="hcs-n">5<sup>+</sup></div><div class="hcs-l">Projects</div></div>
-        <div class="hcs"><div class="hcs-n">2<sup>+</sup></div><div class="hcs-l">Clients</div></div>
-        <div class="hcs"><div class="hcs-n">1<sup>+</sup></div><div class="hcs-l">Years</div></div>
-        <div class="hcs"><div class="hcs-n">3</div><div class="hcs-l">Disciplines</div></div>
+      <div class="hero-right r">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-glow"></div>
+          <div class="hero-photo-circle">
+            <img src="assets/profile.jpg" alt="Wilfred Torgbor Obodai" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="sh r">
-      <span class="sh-n">01</span>
-      <h2 class="sh-title">About</h2>
-      <div class="sh-line"></div>
-    </div>
-    <div class="about-wrap">
-      <div class="about-body r">
-        <p>I'm Wilfred Torgbor Obodai, a multi-disciplinary digital professional
-        who sits at the rare intersection of <strong>engineering, operations,
-        and design</strong>.</p>
-        <p>Most people pick one lane. I built depth across three. That means I see
-        problems that specialists miss and I build solutions that work on every
-        level from the database to the brand identity.</p>
-        <p>Whether it's architecting a full-stack application, managing an
-        executive's workflow end-to-end, or designing a visual identity that
-        actually converts. I bring the same standard to all of it:
-        <strong>thoughtful, precise, and built to last.</strong></p>
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-avatar-wrap r">
+          <div class="avatar-glow"></div>
+          <div class="avatar-circle">
+            <img src="assets/profile.jpg" alt="Wilfred Torgbor Obodai" />
+          </div>
+        </div>
+        <div class="about-content r">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-text">
+            <p>I'm a BSc Computer Science student at <span class="accent">Kwame Nkrumah University of Science and Technology (KNUST)</span>, Ghana, with a passion for building impactful digital solutions.</p>
+            <p>With over <span class="accent">3 years of experience</span> building and deploying production web and mobile applications, I specialize in full-stack development, virtual assistance, and graphic design. My goal is to create technology that empowers businesses and individuals, especially within the Ghanaian tech ecosystem.</p>
+            <p>I've earned certifications from <span class="accent">ALX Africa</span>, <span class="accent">The Hashgraph Association</span>, and more &mdash; continuously expanding my knowledge in cutting-edge technologies.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-icon">&#127979;</div>
+              <div class="stat-label">KNUST Student</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">&#9889;</div>
+              <div class="stat-label">3+ Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">&#127942;</div>
+              <div class="stat-label">4+ Certifications</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="skills r">
-        <div class="sk"><span class="sk-name">React / Next.js</span><div class="sk-bar"><div class="sk-fill" data-w="92%"></div></div><span class="sk-p">92%</span></div>
-        <div class="sk"><span class="sk-name">Node.js / Python</span><div class="sk-bar"><div class="sk-fill" data-w="88%"></div></div><span class="sk-p">88%</span></div>
-        <div class="sk"><span class="sk-name">Figma / Adobe CC</span><div class="sk-bar"><div class="sk-fill" data-w="90%"></div></div><span class="sk-p">90%</span></div>
-        <div class="sk"><span class="sk-name">Virtual Assistance</span><div class="sk-bar"><div class="sk-fill" data-w="95%"></div></div><span class="sk-p">95%</span></div>
-        <div class="sk"><span class="sk-name">UI / UX Design</span><div class="sk-bar"><div class="sk-fill" data-w="85%"></div></div><span class="sk-p">85%</span></div>
-        <div class="sk"><span class="sk-name">Databases &amp; APIs</span><div class="sk-bar"><div class="sk-fill" data-w="87%"></div></div><span class="sk-p">87%</span></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header r">
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <p class="section-sub">Technologies and tools I work with</p>
+      </div>
+      <div class="skills-grid r">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span>React</span><span>Next.js</span><span>HTML</span>
+            <span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Express</span>
+            <span>Python</span><span>REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span>PostgreSQL</span><span>Supabase</span>
+            <span>Firebase</span><span>MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Mobile</h3>
+          <div class="skill-tags">
+            <span>Android / Kotlin</span><span>Flutter</span><span>React Native</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>Figma</span><span>VS Code</span>
+            <span>Vercel</span><span>Docker</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Other</h3>
+          <div class="skill-tags">
+            <span>Graphic Design</span><span>Virtual Assistance</span>
+            <span>UI/UX Design</span><span>AI Integration</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section id="services" class="section">
-    <div class="sh r">
-      <span class="sh-n">02</span>
-      <h2 class="sh-title">Services</h2>
-      <div class="sh-line"></div>
-    </div>
-    <div class="svc-wrap r">
-      <div class="sc">
-        <div class="sc-accent"></div>
-        <div class="sc-num">01</div>
-        <span class="sc-icon">⚡</span>
-        <div class="sc-title">Full Stack Development</div>
-        <p class="sc-desc">End-to-end web applications built with modern stacks. I handle architecture, development, and deployment delivering complete products that scale.</p>
-        <ul class="sc-list">
-          <li>React, Next.js, Vue</li>
-          <li>Node.js, Python, REST APIs</li>
-          <li>PostgreSQL, MongoDB</li>
-          <li>AWS, Vercel, Docker</li>
-          <li>Performance &amp; Security</li>
-        </ul>
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-header r">
+        <h2 class="section-title">Services</h2>
+        <p class="section-sub">What I can do for you</p>
       </div>
-      <div class="sc">
-        <div class="sc-accent"></div>
-        <div class="sc-num">02</div>
-        <span class="sc-icon">◎</span>
-        <div class="sc-title">Virtual Assistance</div>
-        <p class="sc-desc">Strategic executive support that keeps your business moving. I operate as an extension of you thus precise, proactive, and always ahead of the next task.</p>
-        <ul class="sc-list">
-          <li>Executive Admin Support</li>
-          <li>Research &amp; Reporting</li>
-          <li>Calendar &amp; Inbox Mgmt</li>
-          <li>CRM &amp; Project Tools</li>
-          <li>Process Optimization</li>
-        </ul>
-      </div>
-      <div class="sc">
-        <div class="sc-accent"></div>
-        <div class="sc-num">03</div>
-        <span class="sc-icon">✦</span>
-        <div class="sc-title">Graphic Design</div>
-        <p class="sc-desc">Visual systems that communicate with clarity and impact. Brand identities, UI design, print, and digital crafted with purpose, not decoration.</p>
-        <ul class="sc-list">
-          <li>Brand Identity &amp; Logos</li>
-          <li>UI / UX Design</li>
-          <li>Print &amp; Digital Assets</li>
-          <li>Social Media Design</li>
-          <li>Figma Prototyping</li>
-        </ul>
+      <div class="services-grid r">
+        <div class="service-card">
+          <div class="service-icon">&#9889;</div>
+          <h3>Full Stack Development</h3>
+          <p>End-to-end web applications built with modern stacks. Architecture, development, and deployment delivering complete products that scale.</p>
+          <ul>
+            <li>React, Next.js, Vue</li>
+            <li>Node.js, Python, REST APIs</li>
+            <li>PostgreSQL, MongoDB</li>
+            <li>AWS, Vercel, Docker</li>
+            <li>Performance &amp; Security</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#9678;</div>
+          <h3>Virtual Assistance</h3>
+          <p>Strategic executive support that keeps your business moving. Precise, proactive, and always ahead of the next task.</p>
+          <ul>
+            <li>Executive Admin Support</li>
+            <li>Research &amp; Reporting</li>
+            <li>Calendar &amp; Inbox Mgmt</li>
+            <li>CRM &amp; Project Tools</li>
+            <li>Process Optimization</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#10022;</div>
+          <h3>Graphic Design</h3>
+          <p>Visual systems that communicate with clarity and impact. Brand identities, UI design, print, and digital crafted with purpose.</p>
+          <ul>
+            <li>Brand Identity &amp; Logos</li>
+            <li>UI / UX Design</li>
+            <li>Print &amp; Digital Assets</li>
+            <li>Social Media Design</li>
+            <li>Figma Prototyping</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
- <!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="sh r">
-    <span class="sh-n">03</span>
-    <h2 class="sh-title">Selected Work</h2>
-    <div class="sh-line"></div>
-  </div>
-
-  <div class="pj-feature r">
-    <div class="pj-vis">
-      <div class="pj-vis-label">Featured</div>
-      <div class="pj-vis-text">RETAIL<br>TRACK</div>
-    </div>
-    <div class="pj-info">
-      <div>
-        <div class="pj-meta">Full Stack · Retail Management · 2026</div>
-        <h3 class="pj-title">RetailTrack App</h3>
-        <p class="pj-desc">
-          A full-stack retail management application built to help
-          businesses track inventory, sales, and customer data in
-          real time. Clean dashboard, fast performance, and built
-          to scale with any retail operation.
-        </p>
-        <div class="pj-tags">
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">PostgreSQL</span>
-          <span class="tag">Dashboard</span>
-        </div>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header r">
+        <h2 class="section-title">Projects Showcase</h2>
+        <p class="section-sub">Some of my recent work and side projects</p>
       </div>
-      <a href="https://retailtracker.vercel.app" target="_blank" class="pj-link">
-        View Project
-      </a>
-    </div>
-  </div>
+      <div class="projects-grid">
 
-  <div class="pj-grid">
-    <div class="pj-card r">
-      <div class="pj-card-n">02 · Education</div>
-      <div class="pj-card-title">KNUST Course Hub</div>
-      <p class="pj-card-desc">
-        A course resource hub designed for Year 1 KNUST students.
-        Centralizes lecture notes, past questions, and course
-        materials in one easy-to-access platform.
-      </p>
-      <div class="pj-tags">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
-      </div>
-      <a href="https://wilfred-obodai.github.io/knust-course-hub-cs1" target="_blank" class="pj-link"
-        style="margin-top: 1.2rem; font-size: 0.65rem;">
-        View Project
-      </a>
-    </div>
-
-    <div class="pj-card r">
-      <div class="pj-card-n">03 · Utility</div>
-      <div class="pj-card-title">QR Attendance System</div>
-      <p class="pj-card-desc">
-        A QR code-based attendance tracking system. Students scan
-        a unique QR code to mark attendance instantly thus no paper,
-        no manual entry, fully automated records.
-      </p>
-      <div class="pj-tags">
-        <span class="tag">QR Code</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">Firebase</span>
-      </div>
-      <a href="YOUR-QR-LINK" target="_blank" class="pj-link"
-        style="margin-top: 1.2rem; font-size: 0.65rem;">
-        View Project
-      </a>
-    </div>
-
-    <div class="pj-card r">
-      <div class="pj-card-n">04 · Personal</div>
-      <div class="pj-card-title">Portfolio Website</div>
-      <p class="pj-card-desc">
-        This portfolio is designed and built from scratch.
-        Dark theme, custom cursor, scroll animations, and
-        a fully responsive layout across all devices.
-      </p>
-      <div class="pj-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-              </div>
-              <a href="https://wobodai-portfolio.vercel.app" target="_blank" class="pj-link" style="margin-top: 1.2rem; font-size: 0.65rem;">View Project</a>
-            </div>
-
-            <div class="pj-card r">
-              <div class="pj-card-n">05 · Coming Soon</div>
-              <div class="pj-card-title">New Project in Progress</div>
-              <p class="pj-card-desc">
-                Currently working on something new. Check back soon —
-                more projects will be added here shortly.
-              </p>
-              <div class="pj-tags">
-                <span class="tag">In Progress</span>
-                <span class="tag">Coming Soon</span>
-              </div>
-            </div>
-
+        <div class="project-card r">
+          <h3>AcePrep</h3>
+          <p>AI-powered exam preparation platform for Ghanaian BECE and WASSCE students. Multi-codebase platform: React admin dashboard, student web app, Node.js/Express REST API, and a Kotlin Android app — all with Claude AI as an integrated tutor.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>Supabase</span><span>Kotlin</span><span>Claude API</span>
           </div>
-        </section>
-    <!-- AWARDS -->
-<section id="awards" class="section">
-  <div class="sh">
-    <span class="sh-n">04</span>
-    <h2 class="sh-title">Licenses &amp; Certifications</h2>
-    <div class="sh-line"></div>
-  </div>
-
-  <div class="aw-list r">
-
-    <div class="aw">
-      <div class="aw-yr">2026</div>
-      <div>
-        <div class="aw-name">Attendance Hashgraph Developer</div>
-        <div class="aw-org">The Hashgraph Association</div>
-      </div>
-      <a href="https://linkedin.com/in/wilfred-obodai" target="_blank" class="aw-badge w">
-        View ↗
-      </a>
-    </div>
-
-    <div class="aw">
-      <div class="aw-yr">2025</div>
-      <div>
-        <div class="aw-name">Certified Virtual Assistant</div>
-        <div class="aw-org">ALX Africa</div>
-      </div>
-      <a href="https://savanna.alxafrica.com/certificates/Rn2csNF9SJ" target="_blank" class="aw-badge w">
-        View ↗
-      </a>
-    </div>
-
-    <div class="aw">
-      <div class="aw-yr">2025</div>
-      <div>
-        <div class="aw-name">Professional Foundation</div>
-        <div class="aw-org">ALX Africa</div>
-      </div>
-      <a href="https://savanna.alxafrica.com/certificates/yn8JrLE2hR" target="_blank" class="aw-badge w">
-        View ↗
-      </a>
-    </div>
-
-    <div class="aw">
-      <div class="aw-yr">2025</div>
-      <div>
-        <div class="aw-name">AI Career Essentials (Prompt Engineering)</div>
-        <div class="aw-org">ALX Africa</div>
-      </div>
-      <a href="https://linkedin.com/in/wilfred-obodai" target="_blank" class="aw-badge w">
-        View ↗
-      </a>
-    </div>
-
-  </div>
-</section>
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="ct-l r">
-      <div>
-        <div class="ct-title">Let's build<br>something<br><span>great.</span></div>
-        <p class="ct-sub">Have a project in mind? Need a reliable developer,
-        assistant, or designer? Let's talk.</p>
-        <a href="mailto:wilfredobodai5@gmail.com" class="ct-email">wilfredobodai5@gmail.com</a>
-        <div class="ct-avail">
-          <span class="ct-dot"></span>Available for new projects
+          <div class="project-links">
+            <a href="https://github.com/wilfred-obodai" target="_blank" class="project-link">&#128279; Code</a>
+          </div>
         </div>
+
+        <div class="project-card r">
+          <h3>RetailTrack</h3>
+          <p>Sales and inventory management web app for small businesses in Ghana. Real-time stock tracking, PDF receipt generation, exportable sales reports, and interactive revenue charts. Deployed on Vercel and Render.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>Supabase</span><span>PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/wilfred-obodai/retailtrack" target="_blank" class="project-link">&#128279; Code</a>
+            <a href="https://retailtracker.vercel.app" target="_blank" class="project-link">&#8599; Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card r">
+          <h3>QR Attendance System</h3>
+          <p>QR code-based class attendance tracker using vanilla JavaScript and Supabase for real-time data storage. Students scan a unique code to mark attendance instantly — no paper, no manual entry.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>Supabase</span><span>QR Code</span><span>Vercel</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/wilfred-obodai/myattendance-qr" target="_blank" class="project-link">&#128279; Code</a>
+          </div>
+        </div>
+
+        <div class="project-card r">
+          <h3>KNUST Course Hub</h3>
+          <p>A course resource hub designed for Year 1 KNUST Computer Science students. Centralizes lecture notes, past questions, and course materials in one easy-to-access platform.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/wilfred-obodai/knust-course-hub-cs1" target="_blank" class="project-link">&#128279; Code</a>
+            <a href="https://wilfred-obodai.github.io/knust-course-hub-cs1" target="_blank" class="project-link">&#8599; Live Demo</a>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="ct-r r">
-      <h3>Find me on</h3>
-      <a href="https://linkedin.com/in/wilfred-obodai" class="cl">
-        <div><div class="cl-name">LinkedIn</div><div class="cl-sub">Professional Network</div></div>
-        <span class="cl-arr">→</span>
-      </a>
-      <a href="https://github.com/wilfred-obodai" class="cl">
-        <div><div class="cl-name">GitHub</div><div class="cl-sub">Code &amp; Open Source</div></div>
-        <span class="cl-arr">→</span>
-      </a>
-      <a href="https://x.com/wilfred_obodai" class="cl">
-        <div><div class="cl-name">Twitter / X</div><div class="cl-sub">Message</div></div>
-        <span class="cl-arr">→</span>
-      </a>
-      <a href="https://wa.me/+233595302008" class="cl">
-        <div><div class="cl-name">WhatsApp</div><div class="cl-sub">Direct Message</div></div>
-        <span class="cl-arr">→</span>
-      </a>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="awards" class="section section-alt">
+    <div class="container">
+      <div class="section-header r">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-sub">Professional development and continuous learning</p>
+      </div>
+      <div class="certs-grid r">
+
+        <div class="cert-card">
+          <div class="cert-icon">&#127942;</div>
+          <h3>AI Course for All</h3>
+          <p class="cert-issuer">KNUST</p>
+          <p class="cert-year">Jan 2026</p>
+          <a href="https://linkedin.com/in/wilfred-obodai" target="_blank" class="cert-link">View &#8599;</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">&#127942;</div>
+          <h3>Hashgraph Developer</h3>
+          <p class="cert-issuer">The Hashgraph Association</p>
+          <p class="cert-year">Jan 2026</p>
+          <a href="https://linkedin.com/in/wilfred-obodai" target="_blank" class="cert-link">View &#8599;</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">&#127942;</div>
+          <h3>Applied AI Project</h3>
+          <p class="cert-issuer">ALX Africa</p>
+          <p class="cert-year">Oct 2025</p>
+          <a href="https://savanna.alxafrica.com/certificates/Rn2csNF9SJ" target="_blank" class="cert-link">View &#8599;</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">&#127942;</div>
+          <h3>Certified Virtual Assistant</h3>
+          <p class="cert-issuer">ALX Africa</p>
+          <p class="cert-year">2025</p>
+          <a href="https://savanna.alxafrica.com/certificates/yn8JrLE2hR" target="_blank" class="cert-link">View &#8599;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="section resume-section">
+    <div class="container">
+      <div class="resume-card r">
+        <div class="resume-icon">&#128196;</div>
+        <h2>My Resume</h2>
+        <p>View or download my full resume to see my complete work history, education, and technical expertise.</p>
+        <a href="assets/Wilfred_Torgbor_Obodai_Resume.pdf" download class="btn-primary">&#8595; Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header r">
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-sub">Get in touch for freelance work, collaborations, or opportunities</p>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info r">
+          <h3>Contact Information</h3>
+          <p>Let's build something great together. I'm available for freelance projects, full-time opportunities, and collaborative ventures. Whether you need a full-stack developer, virtual assistant, or graphic designer &mdash; I'm here to help.</p>
+          <div class="contact-links">
+            <a href="https://github.com/wilfred-obodai" target="_blank" class="contact-link">
+              <div class="contact-link-icon">gh</div>
+              <div>
+                <div class="contact-link-name">GitHub</div>
+                <div class="contact-link-sub">@wilfred-obodai</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/wilfred-obodai" target="_blank" class="contact-link">
+              <div class="contact-link-icon">in</div>
+              <div>
+                <div class="contact-link-name">LinkedIn</div>
+                <div class="contact-link-sub">Connect with me</div>
+              </div>
+            </a>
+            <a href="mailto:wilfredobodai5@gmail.com" class="contact-link">
+              <div class="contact-link-icon">&#9993;</div>
+              <div>
+                <div class="contact-link-name">Email</div>
+                <div class="contact-link-sub">wilfredobodai5@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://wa.me/+233595302008" target="_blank" class="contact-link">
+              <div class="contact-link-icon">&#9742;</div>
+              <div>
+                <div class="contact-link-name">WhatsApp</div>
+                <div class="contact-link-sub">Direct Message</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap r">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" name="email" placeholder="your.email@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" name="subject" placeholder="What's this about?" required />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="submitBtn">&#8599; Send Message</button>
+          </form>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="f-l"><span>Wilfred Torgbor Obodai</span> — Dev · VA · Design</div>
-    <div class="f-r">© 2025 All rights reserved</div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="logo">WO<span class="accent">.</span></div>
+        <p>Full-Stack Developer building digital solutions that make a difference.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <p>Greater Accra, Ghana &#127468;&#127469;<br/>KNUST Campus</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Wilfred Torgbor Obodai. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
